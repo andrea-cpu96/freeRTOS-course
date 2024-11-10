@@ -10,12 +10,12 @@
 ../ThirdParty/FreeRTOS/queue.c:815:16:xQueueTakeMutexRecursive	4
 ../ThirdParty/FreeRTOS/queue.c:862:19:xQueueCreateCountingSemaphoreStatic	5
 ../ThirdParty/FreeRTOS/queue.c:902:19:xQueueCreateCountingSemaphore	5
-../ThirdParty/FreeRTOS/queue.c:939:12:xQueueGenericSend	21
+../ThirdParty/FreeRTOS/queue.c:939:12:xQueueGenericSend	18
 ../ThirdParty/FreeRTOS/queue.c:1157:12:xQueueGenericSendFromISR	16
 ../ThirdParty/FreeRTOS/queue.c:1329:12:xQueueGiveFromISR	13
-../ThirdParty/FreeRTOS/queue.c:1502:12:xQueueReceive	18
-../ThirdParty/FreeRTOS/queue.c:1652:12:xQueueSemaphoreTake	19
-../ThirdParty/FreeRTOS/queue.c:1877:12:xQueuePeek	18
+../ThirdParty/FreeRTOS/queue.c:1502:12:xQueueReceive	15
+../ThirdParty/FreeRTOS/queue.c:1652:12:xQueueSemaphoreTake	16
+../ThirdParty/FreeRTOS/queue.c:1877:12:xQueuePeek	15
 ../ThirdParty/FreeRTOS/queue.c:2035:12:xQueueReceiveFromISR	12
 ../ThirdParty/FreeRTOS/queue.c:2135:12:xQueuePeekFromISR	7
 ../ThirdParty/FreeRTOS/queue.c:2197:13:uxQueueMessagesWaiting	2
@@ -38,4 +38,3 @@
 ../ThirdParty/FreeRTOS/queue.c:3009:10:vQueueAddToRegistry	8
 ../ThirdParty/FreeRTOS/queue.c:3060:18:pcQueueGetName	4
 ../ThirdParty/FreeRTOS/queue.c:3095:10:vQueueUnregisterQueue	4
-../ThirdParty/FreeRTOS/queue.c:3132:10:vQueueWaitForMessageRestricted	4

@@ -1,7 +1,7 @@
 ../ThirdParty/FreeRTOS/event_groups.c:86:28:xEventGroupCreateStatic	4
 ../ThirdParty/FreeRTOS/event_groups.c:145:28:xEventGroupCreate	2
-../ThirdParty/FreeRTOS/event_groups.c:185:17:xEventGroupSync	12
-../ThirdParty/FreeRTOS/event_groups.c:312:17:xEventGroupWaitBits	17
+../ThirdParty/FreeRTOS/event_groups.c:185:17:xEventGroupSync	9
+../ThirdParty/FreeRTOS/event_groups.c:312:17:xEventGroupWaitBits	14
 ../ThirdParty/FreeRTOS/event_groups.c:472:17:xEventGroupClearBits	3
 ../ThirdParty/FreeRTOS/event_groups.c:524:17:xEventGroupGetBitsFromISR	1
 ../ThirdParty/FreeRTOS/event_groups.c:547:17:xEventGroupSetBits	9
