@@ -1689,3 +1689,6 @@ Project's '005LED_Btn_ISR' active one is '005LED_Btn_ISR.ioc' file
 !MESSAGE Invalid Input: Must be project's active .ioc file.
 
 Project's '005LED_Btn_ISR' active one is '005LED_Btn_ISR.ioc' file
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-01 15:56:58.327
+!MESSAGE Indexed '006Task_Priority' (37 sources, 156 headers) in 2.49 sec: 16,221 declarations; 72,338 references; 9 unresolved inclusions; 1,055 syntax errors; 1,400 unresolved names (1.6%)
