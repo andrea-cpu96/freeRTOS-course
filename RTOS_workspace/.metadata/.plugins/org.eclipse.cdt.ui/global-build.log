@@ -1,35 +1,35 @@
-16:29:38 **** Incremental Build of configuration Debug for project 002LED_Tasks ****
+11:19:18 **** Incremental Build of configuration Debug for project 004LED_Task_Notify ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/SEGGER/Config" -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/FreeRTOS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "002LED_Tasks.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Andrea\Embedded\repositories\freeRTOS course\RTOS_workspace\002LED_Tasks\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002LED_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 002LED_Tasks.elf
+arm-none-eabi-gcc -o "004LED_Task_Notify.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Andrea\Embedded\repositories\freeRTOS course\RTOS_workspace\004LED_Task_Notify\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004LED_Task_Notify.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 004LED_Task_Notify.elf
  
-arm-none-eabi-size  002LED_Tasks.elf 
-arm-none-eabi-objdump -h -S 002LED_Tasks.elf  > "002LED_Tasks.list"
+arm-none-eabi-size  004LED_Task_Notify.elf 
+arm-none-eabi-objdump -h -S 004LED_Task_Notify.elf  > "004LED_Task_Notify.list"
    text	   data	    bss	    dec	    hex	filename
-  21852	     20	 110700	 132572	  205dc	002LED_Tasks.elf
+  26792	     20	 117884	 144696	  23538	004LED_Task_Notify.elf
 Finished building: default.size.stdout
  
-Finished building: 002LED_Tasks.list
+Finished building: 004LED_Task_Notify.list
  
-16:29:41 **** Incremental Build of configuration Debug for project 002LED_Tasks ****
+11:19:24 **** Incremental Build of configuration Debug for project 004LED_Task_Notify ****
 make -j12 all 
-arm-none-eabi-size  002LED_Tasks.elf 
+arm-none-eabi-size  004LED_Task_Notify.elf 
    text	   data	    bss	    dec	    hex	filename
-  21852	     20	 110700	 132572	  205dc	002LED_Tasks.elf
+  26792	     20	 117884	 144696	  23538	004LED_Task_Notify.elf
 Finished building: default.size.stdout
  
-16:30:45 **** Incremental Build of configuration Debug for project 001Tasks ****
+11:22:52 **** Incremental Build of configuration Debug for project 004LED_Task_Notify ****
 make -j12 all 
-arm-none-eabi-size  001Tasks.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/SEGGER/Config" -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -I"D:/Andrea/Embedded/repositories/freeRTOS course/RTOS_workspace/common/ThirdParty/FreeRTOS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "004LED_Task_Notify.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Andrea\Embedded\repositories\freeRTOS course\RTOS_workspace\004LED_Task_Notify\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004LED_Task_Notify.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 004LED_Task_Notify.elf
+ 
+arm-none-eabi-size  004LED_Task_Notify.elf 
+arm-none-eabi-objdump -h -S 004LED_Task_Notify.elf  > "004LED_Task_Notify.list"
    text	   data	    bss	    dec	    hex	filename
-  26068	    100	 111028	 137196	  217ec	001Tasks.elf
+  26808	     20	 117884	 144712	  23548	004LED_Task_Notify.elf
 Finished building: default.size.stdout
  
-16:35:10 **** Incremental Build of configuration Debug for project 002LED_Tasks ****
-make -j12 all 
-arm-none-eabi-size  002LED_Tasks.elf 
-   text	   data	    bss	    dec	    hex	filename
-  21852	     20	 110700	 132572	  205dc	002LED_Tasks.elf
-Finished building: default.size.stdout
+Finished building: 004LED_Task_Notify.list
  

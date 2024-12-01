@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Red"/>
+		<item key="selection" value="task1_handler"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="task1_handler"/>
+			<item value="aUp[1]"/>
+			<item value="sizeOfBuffer"/>
+			<item value="BUFFER_SIZE_UP"/>
+			<item value="segger"/>
+			<item value="vtask"/>
 			<item value="red"/>
 			<item value="vApplicationStackOverflowHook"/>
 			<item value="taskCHECK_FOR_STACK_OVERFLOW"/>
@@ -17,9 +23,6 @@
 			<item value="configNUMBER_OF_CORES"/>
 			<item value="write"/>
 			<item value="configMAX_P"/>
-			<item value="M4"/>
-			<item value="overflow"/>
-			<item value="sys"/>
 		</list>
 		<list key="replacehistory">
 		</list>
