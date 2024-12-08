@@ -1,0 +1,10 @@
+/*
+ * led_effect.c
+ *
+ *  Created on: Dec 6, 2024
+ *      Author: andre
+ */
+
+#include "main.h"
+
+led_effect_stop()

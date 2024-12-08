@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="task1_handler"/>
+		<item key="selection" value="cmd_handler_task"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="cmd_handler_task"/>
+			<item value="print_task"/>
+			<item value="switch(curr_state)"/>
+			<item value="not"/>
+			<item value="configSUPPORT_DYNAMIC_ALLOCATION"/>
+			<item value="menu_task"/>
+			<item value="queue"/>
+			<item value="que"/>
+			<item value="handle_cmd_task"/>
+			<item value="handle_menu_task"/>
+			<item value="xTaskHandle"/>
+			<item value="status_button"/>
+			<item value="volatile"/>
+			<item value="button_interrupt_handler"/>
 			<item value="task1_handler"/>
-			<item value="aUp[1]"/>
-			<item value="sizeOfBuffer"/>
-			<item value="BUFFER_SIZE_UP"/>
-			<item value="segger"/>
-			<item value="vtask"/>
-			<item value="red"/>
-			<item value="vApplicationStackOverflowHook"/>
-			<item value="taskCHECK_FOR_STACK_OVERFLOW"/>
-			<item value="configKERNEL_PROVIDED_STATIC_MEMORY"/>
-			<item value="vApplicationGetIdleTaskMemory"/>
-			<item value="hook"/>
-			<item value="configNUMBER_OF_CORES"/>
-			<item value="write"/>
-			<item value="configMAX_P"/>
 		</list>
 		<list key="replacehistory">
 		</list>

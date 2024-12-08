@@ -5,5 +5,5 @@
 ../Core/Src/main.c:353:13:led_orange_handler	2
 ../Core/Src/main.c:383:13:led_red_handler	2
 ../Core/Src/main.c:414:13:button_handler	4
-../Core/Src/main.c:471:6:HAL_TIM_PeriodElapsedCallback	2
-../Core/Src/main.c:488:6:Error_Handler	1
+../Core/Src/main.c:469:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:486:6:Error_Handler	1

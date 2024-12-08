@@ -1,0 +1,46 @@
+/*
+ * rtc.c
+ *
+ *  Created on: Dec 6, 2024
+ *      Author: andre
+ */
+
+
+#include "main.h"
+
+
+void show_time_date(void)
+{
+
+	static char showTime[40];
+	static char showDate[40];
+
+	RTC_DateTypeDef rtc_date;
+	RTC_TimeTypeDef rtc_time;
+
+	static char *time = showTIme;
+	static char *date = showDate;
+
+	memset(&rtc_date,0 , sizeof(rtc_date));
+	memset(&rtc_time, 0, sizeof(rtc_time));
+
+
+}
+
+
+void rtc_configure_time(RTC_TimeTypeDef *time)
+{
+
+	time->TimeFormat = RTC_HOURFORMAT12_AM;
+
+	HAL_RTC_SetTime(&hrtc, time, RTC_FORMAT_BIN);
+
+}
+
+
+void rtc_configure_date(RTC_DateTypeDef *date)
+{
+
+	HAL_RTC_SetDate(&hrtc, date, RTC_FORMAT_BIN);
+
+}

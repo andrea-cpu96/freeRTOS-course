@@ -1,0 +1,17 @@
+/*
+ * rtc.c
+ *
+ *  Created on: Dec 6, 2024
+ *      Author: andre
+ */
+
+
+#include "main.h"
+
+
+void rtc_configure_time(RTC_TimeTypeDef *time)
+{
+
+	time->TimeFormat = RTC_HOURFORMAT12_AM;
+
+}

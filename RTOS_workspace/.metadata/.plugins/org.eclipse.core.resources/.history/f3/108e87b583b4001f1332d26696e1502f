@@ -1,0 +1,30 @@
+/*
+ * led_effect.c
+ *
+ *  Created on: Dec 6, 2024
+ *      Author: andre
+ */
+
+#include "main.h"
+
+
+void led_effect_stop(void)
+{
+
+}
+
+
+void led_effect(int n)
+{
+
+	led_effect_stop();
+	xTimerStart()
+
+}
+
+
+void LED_effect1()
+{
+
+
+}
