@@ -3,8 +3,8 @@
 ../Core/Src/main.c:211:13:MX_RTC_Init	2
 ../Core/Src/main.c:246:13:MX_USART2_UART_Init	2
 ../Core/Src/main.c:279:13:MX_GPIO_Init	1
-../Core/Src/main.c:421:6:HAL_UART_RxCpltCallback	4
-../Core/Src/main.c:468:6:led_effect_cb	5
-../Core/Src/main.c:506:6:rtc_report_callback	1
-../Core/Src/main.c:523:6:HAL_TIM_PeriodElapsedCallback	2
-../Core/Src/main.c:540:6:Error_Handler	1
+../Core/Src/main.c:421:6:HAL_UART_RxCpltCallback	6
+../Core/Src/main.c:483:6:led_effect_cb	5
+../Core/Src/main.c:521:6:rtc_report_callback	1
+../Core/Src/main.c:538:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:555:6:Error_Handler	1

@@ -23,18 +23,18 @@ void process_command(command_t *cmd);
 int extract_command(command_t *cmd);
 
 
-const char *msg_inv = "/////// IVALID OPTION ////////\n";
+const char *msg_inv = "/////// IVALID OPTION ////////\n\r";
 
 
 void menu_task(void *parameters)
 {
 
-	const char *msg_menu = "===============================\n"
-						   "|              MENU            |\n"
-						   "===============================\n"
-						   "LED effect     --->           0\n"
-						   "Date & Time    --->           1\n"
-						   "Exit           --->           2\n"
+	const char *msg_menu = "===============================\n\r"
+						   "|              MENU            |\n\r"
+						   "===============================\n\r"
+						   "LED effect     --->           0\n\r"
+						   "Date & Time    --->           1\n\r"
+						   "Exit           --->           2\n\r"
 						   "Enter your choice here ; ";
 	uint32_t cmd_addr;
 	command_t *cmd;
@@ -148,10 +148,10 @@ void print_task(void *parameters)
 void led_task(void *parameters)
 {
 
-	const char *msg_led = "===============================\n"
-						  "|          LED effect         |\n"
-						  "===============================\n"
-						  "(none, e1, e2, e3, e4\n"
+	const char *msg_led = "===============================\n\r"
+						  "|          LED effect         |\n\r"
+						  "===============================\n\r"
+						  "(none, e1, e2, e3, e4\n\r"
 						  "Enter your choice here ; ";
 	uint32_t cmd_addr;
 	command_t *cmd;
@@ -219,14 +219,14 @@ void rtc_task(void *parameters)
 	#define DAY_CONFIG 		3
 
 
-	const char* msg_rtc1 = "========================\n"
-						   "|         RTC          |\n"
-						   "========================\n";
+	const char* msg_rtc1 = "========================\n\r"
+						   "|         RTC          |\n\r"
+						   "========================\n\r";
 
-	const char* msg_rtc2 = "Configure Time            ----> 0\n"
-						   "Configure Date            ----> 1\n"
-						   "Enable reporting          ----> 2\n"
-						   "Exit                      ----> 3\n"
+	const char* msg_rtc2 = "Configure Time            ----> 0\n\r"
+						   "Configure Date            ----> 1\n\r"
+						   "Enable reporting          ----> 2\n\r"
+						   "Exit                      ----> 3\n\r"
 						   "Enter your choice here : ";
 
 
@@ -239,7 +239,7 @@ void rtc_task(void *parameters)
 	const char *msg_rtc_dow  = "Enter day(1-7 sun:1):";
 	const char *msg_rtc_yr  = "Enter year(0-99):";
 
-	const char *msg_conf = "Configuration successful\n";
+	const char *msg_conf = "Configuration successful\n\r";
 	const char *msg_rtc_report = "Enable time&date reporting(y/n)?: ";
 
 
@@ -542,7 +542,7 @@ int extract_command(command_t *cmd)
 		status = xQueueReceive(qdata, &item, 0);
 		if(status == pdTRUE) cmd->payload[i++] = item;
 
-	}while(item != '\n');
+	}while(item != '\r');
 
 	cmd->payload[i-1] = '\0';
 	cmd->len = ( i - 1 );

@@ -421,7 +421,22 @@ static void MX_GPIO_Init(void)
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 
-	HAL_Delay(1);
+	for(int i = 0 ; i < 4000 ; i++);
+
+	uint8_t msg = user_data;
+	if(msg == '\r')
+	{
+
+		char cr[2] = "\n\r";
+		HAL_UART_Transmit(huart, (uint8_t *)cr, 2, HAL_MAX_DELAY);
+
+	}
+	else
+	{
+
+		HAL_UART_Transmit(huart, &msg, 1, HAL_MAX_DELAY);
+
+	}
 
 	if(!(xQueueIsQueueFullFromISR(qdata)))
 	{
@@ -437,7 +452,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 		/*Queue is full */
 
-		if(user_data == '\n')
+		if(user_data == '\r')
 		{
 
 			/*user_data = '\n' */
@@ -451,7 +466,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	}
 
 	/* Send notification to command handling task if user_data = '\n' */
-	if(user_data == '\n')
+	if(user_data == '\r')
 	{
 
 		/* Send notification to command handling task */

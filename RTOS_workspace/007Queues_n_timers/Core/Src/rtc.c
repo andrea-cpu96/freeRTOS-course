@@ -35,11 +35,11 @@ void show_time_date(void)
 	format = ( rtc_time.TimeFormat == RTC_HOURFORMAT12_AM ) ? "AM" : "PM";
 
 	// Display time format : hh:mm:ss [AM/PM]
-	sprintf((char *)showTime, "%s:\t%02d:%02d:%02d [%s]", "\nCurrent Time&Date", rtc_time.Hours, rtc_time.Minutes, rtc_time.Seconds, format);
+	sprintf((char *)showTime, "%s:\t%02d:%02d:%02d [%s]", "\n\rCurrent Time&Date", rtc_time.Hours, rtc_time.Minutes, rtc_time.Seconds, format);
 	xQueueSend(qprint, &time, portMAX_DELAY);
 
 	// Display date format : date-month-year
-	sprintf((char *)showDate, "\t%02d-%02d-%02d\n", rtc_date.Month, rtc_date.Date, ( 2000 + rtc_date.Year ));
+	sprintf((char *)showDate, "\t%02d-%02d-%02d\n\r", rtc_date.Month, rtc_date.Date, ( 2000 + rtc_date.Year ));
 	xQueueSend(qprint, &date, portMAX_DELAY);
 }
 
@@ -62,7 +62,7 @@ void show_time_date_itm(void)
 
 
 	printf("%02d:%02d:%02d [%s]",rtc_time.Hours, rtc_time.Minutes, rtc_time.Seconds,format);
-	printf("\t%02d-%02d-%2d\n",rtc_date.Month, rtc_date.Date, 2000 + rtc_date.Year);
+	printf("\t%02d-%02d-%2d\n\r",rtc_date.Month, rtc_date.Date, 2000 + rtc_date.Year);
 
 }
 
